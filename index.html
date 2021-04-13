@@ -11,7 +11,62 @@
     <title>Bootstrap Layout E01</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <div class="container">
+        <nav class="navbar mb-3">
+          <ul class="nav nav-pills justify-content-start">
+            <li class="nav-item"><a class="nav-link active" href="#">Docs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Examples</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Icons</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Themes</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section>
+      <div class="container-sm bg-dark rounded p-3"> 
+        <h2 class="text-uppercase text-light">Header Banner Area</h2>
+        <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, velit deserunt eveniet blanditiis incidunt ratione perspiciatis quaerat nobis totam reprehenderit expedita odio mollitia cupiditate maiores? Corrupti maiores amet harum voluptates?</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+      <!-- To do Add grid system here for col 1. form, col 2. heading and text, col 3. heading and text  -->
+      <!-- create a form - this will have to be moved into the grid system  -->
+        <div class="row">
+
+          <form class="col-xl-6 bg-primary p-3 mt-3 mb-3 ms-1 me-1 text-light">
+            <h2>Sign In</h2>
+            <div class="form-group">
+              <label for="email">Your Email Address</label>
+              <input class="form-control mb-1" type="email" id="email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control mb-1" id="password">
+            </div>
+            <div class="form-group d-flex">
+              <input class="rounded mt-1 form-check" type="checkbox" id="pw-save" name="saved-pw">
+              <label for="pw-save" class="ms-1 mt-1">Save Password</label>
+            </div>
+            <button type="submit" class="btn btn-light mt-1">Login</button>
+          </form>
+
+          <div class="col-md col-xl mt-3 mb-3 ms-1 me-1">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus voluptate, placeat eaque quisquam dolores dicta quod maxime obcaecati natus fugiat amet commodi soluta deleniti, quam possimus. Praesentium asperiores voluptate doloribus?</p>
+            <a class="btn btn-primary text-light" href="#">Veiw More</a>
+          </div>
+          <div class="col-md col-xl mt-3 mb-3 ms-1 me-1">
+            <h2>Heading</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus voluptate, placeat eaque quisquam dolores dicta quod maxime obcaecati natus fugiat amet commodi soluta deleniti, quam possimus. Praesentium asperiores voluptate doloribus?</p>
+            <a class="btn btn-primary text-light" href="#">Veiw More</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
